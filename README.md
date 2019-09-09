@@ -1,4 +1,4 @@
-# IDD-Fa18-Lab1: Blink!
+# IDD-Fa18-Lab1: Blink?
 
 **A lab report by William J Leon**
 
@@ -8,7 +8,7 @@ We've copied the questions from the lab here. Answer them below!
 
 ## Part A. Set Up a Breadboard
 
-[insert a photo of your breadboard setup here]
+!(Blink)[
 
 
 ## Part B. Manually Blink a LED
@@ -24,7 +24,7 @@ Brown Black Brown
 ### 1. Blink the on-board LED
 
 **a. What line(s) of code do you need to change to make the LED blink (like, at all)?**
-    #+BEGIN_SRC cpp                                                          
+ 14     #+BEGIN_SRC cpp                                                          
  15      void setup() {                                                           
  16        // put your setup code here, to run once:                              
  17        pinMode(1,OUTPUT);                                                     
@@ -53,7 +53,7 @@ Brown Black Brown
 
 **Make a video of your LED blinking, and add it to your lab submission.**
 
-[link to your video here; feel free to upload to youtube and just paste in a link here]
+[LEDs blinking in different ways](https://youtu.be/faF90KuzX0E)
 
 
 ## Part D. Manually fade an LED
@@ -95,13 +95,15 @@ digitalWrite() operates on TTL 5V logic
 
 **a. Is there computation in your device? Where is it? What do you think is happening inside the "computer?"**
 
+Yes, there is a battery charge controller IC
+
 **b. Are there sensors on your device? How do they work? How is the sensed information conveyed to other portions of the device?**
 
 There are internal sensors for the amount of potential in the battery to determine the state of charging.
 
 **c. How is the device powered? Is there any transformation or regulation of the power? How is that done? What voltages are used throughout the system?**
 
-The device is powered by mains (120 V, 60 Hz AC), there is a transformer and rectifier that drops the power to 5 V and 
+The device is powered by mains (120 V, 60 Hz AC), there is a transformer and rectifier that drops the power to 5 V DC
 
 **d. Is information stored in your device? Where? How?**
 
@@ -116,5 +118,7 @@ It is easiest to impant a light on the 5 V rails directly, or otherwise on the e
 ### 3. Build your light!
 
 **Make a video showing off your Frankenlight.**
+
+[LEDs blinking in different ways, includes lazy LED highjacking](https://youtu.be/faF90KuzX0E)
 
 **Include any schematics or photos in your lab write-up.**
