@@ -64,12 +64,30 @@ Brown Black Brown
 ## Part E. Fade an LED using Arduino
 
 **a. What do you have to modify to make the code control the circuit you've built on your breadboard?**
+
 The LED needs to be moved to a PWM enabled pin and then change the code to use an analog signal for that PIN.
 
+#+BEGIN_SRC cpp
+void setup() {
+  // put your setup code here, to run once:
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  for ( int i = 0; i < 256 ; i++ ) {
+    analogWrite(9,i);
+    delay(10);
+  }
+  for ( int i = 255; i > 0 ; i-- ) {
+    analogWrite(9,i);
+    delay(10);
+  }
+}
+#+END_SRC
 
 **b. What is analogWrite()? How is that different than digitalWrite()?**
-digitalWrite() operates on TTL 5V logic
 
+digitalWrite() operates on TTL 5V logic
 
 ## Part F. FRANKENLIGHT!!!
 
