@@ -8,7 +8,7 @@ We've copied the questions from the lab here. Answer them below!
 
 ## Part A. Set Up a Breadboard
 
-!(Blink)[IMG_20190909_184206.jpg]
+!(Blink)[/IMG_20190909_184206.jpg]
 
 
 ## Part B. Manually Blink a LED
