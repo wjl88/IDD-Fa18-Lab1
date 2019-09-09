@@ -69,7 +69,7 @@ Brown Black Brown
 
 The LED needs to be moved to a PWM enabled pin and then change the code to use an analog signal for that PIN.
 
-#+BEGIN_SRC cpp
+```cpp
 void setup() {
   // put your setup code here, to run once:
 }
@@ -85,7 +85,7 @@ void loop() {
     delay(10);
   }
 }
-#+END_SRC
+```
 
 **b. What is analogWrite()? How is that different than digitalWrite()?**
 
