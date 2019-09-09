@@ -24,7 +24,8 @@ Brown Black Brown
 ### 1. Blink the on-board LED
 
 **a. What line(s) of code do you need to change to make the LED blink (like, at all)?**
-'''14      #+BEGIN_SRC cpp                                                          
+'''cpp
+14      #+BEGIN_SRC cpp                                                          
  15      void setup() {                                                           
  16        // put your setup code here, to run once:                              
  17        pinMode(1,OUTPUT);                                                     
@@ -37,7 +38,8 @@ Brown Black Brown
  24        digitalWrite(1,LOW);                                                   
  25        delay(300);                                                            
  26      }                                                                        
- 27      #+END_SRC '''
+ 27      #+END_SRC 
+ '''
 
 **b. What line(s) of code do you need to change to change the rate of blinking?**
 
