@@ -11,7 +11,7 @@
 
 **a. What color stripes are on a 100 Ohm resistor?**
 
-Brown Black Brown Gold ( 1 0 x10 5% )
+Brown Black Brown Gold ( 1, 0, x10, 5% )
  
 **b. What do you have to do to light your LED?**
 
