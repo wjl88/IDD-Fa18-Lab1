@@ -10,10 +10,12 @@
 ## Part B. Manually Blink a LED
 
 **a. What color stripes are on a 100 Ohm resistor?**
-Brown Black Brown
+
+Brown Black Brown Gold ( 1 0 x10 5% )
  
 **b. What do you have to do to light your LED?**
- 
+
+Connect the microcontroller to power
 
 ## Part C. Blink a LED using Arduino
 
@@ -39,10 +41,17 @@ Brown Black Brown
 
 **b. What line(s) of code do you need to change to change the rate of blinking?**
 
+```cpp
+delay(300);
+```
 
 **c. What circuit element would you want to add to protect the board and external LED?**
+
+A current-limiting resistor
  
 **d. At what delay can you no longer *perceive* the LED blinking? How can you prove to yourself that it is, in fact, still blinking?**
+
+Roughly 10 ms delay time. Hooking it up to an oscilloscope or recording it with a high-speed camera
 
 **e. Modify the code to make your LED blink your way. Save your new blink code to your lab 1 repository, with a link on the README.md.**
 
@@ -57,13 +66,13 @@ Brown Black Brown
 ## Part D. Manually fade an LED
 
 **a. Are you able to get the LED to glow the whole turning range of the potentiometer? Why or why not?**
-
+It will stop glowing because too much resistance is preventing enough current to pass through
 
 ## Part E. Fade an LED using Arduino
 
 **a. What do you have to modify to make the code control the circuit you've built on your breadboard?**
 
-The LED needs to be moved to a PWM enabled pin and then change the code to use an analog signal for that PIN.
+The LED needs to be moved to a PWM enabled pin and the code has to be changed to use an analog signal for that PIN.
 
 ```cpp
 void setup() {
@@ -85,15 +94,17 @@ void loop() {
 
 **b. What is analogWrite()? How is that different than digitalWrite()?**
 
-digitalWrite() operates on TTL 5V logic
+analogWrite() sends an 8bit-resolution duty-cycle square wave that mimics analog (continuous) control unlike digitalWrite() which operates on TTL 5V logic, no duty-cycling.
 
 ## Part F. FRANKENLIGHT!!!
 
 ### 1. Take apart your electronic device, and draw a schematic of what is inside. 
 
+![Canon Camera Charger](IMG_2805.JPG)
+
 **a. Is there computation in your device? Where is it? What do you think is happening inside the "computer?"**
 
-Yes, there is a battery charge controller IC
+Yes, there is a battery charge controller IC. This computer is calculating the amount of charge in the battery and current flow to minimize charging time without damaging the battery
 
 **b. Are there sensors on your device? How do they work? How is the sensed information conveyed to other portions of the device?**
 
@@ -107,11 +118,15 @@ The device is powered by mains (120 V, 60 Hz AC), there is a transformer and rec
 
 No information is stored on the device.
 
+![Back of the board](IMG_2804.JPG)
+
 ### 2. Using your schematic, figure out where a good point would be to hijack your device and implant an LED.
 
 It is easiest to impant a light on the 5 V rails directly, or otherwise on the existing LED rails
 
 **Describe what you did here.**
+
+I just jumped the built in LEDs on the charger's board
 
 ### 3. Build your light!
 
