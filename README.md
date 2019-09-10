@@ -105,21 +105,23 @@ analogWrite() sends an 8bit-resolution duty-cycle square wave that mimics analog
 
 ![Canon Camera Charger](IMG_2805.JPG)
 
+![Block Diagram](IMG_20190910_082832__01.jpg)
+
 **a. Is there computation in your device? Where is it? What do you think is happening inside the "computer?"**
 
-Yes, there is a battery charge controller IC. This computer is calculating the amount of charge in the battery and current flow to minimize charging time without damaging the battery
+Yes, there is a battery charge controller MCU . This computer is calculating the amount of charge in the battery and current flow to minimize charging time without damaging the battery
 
 **b. Are there sensors on your device? How do they work? How is the sensed information conveyed to other portions of the device?**
 
-There are internal sensors for the amount of potential in the battery to determine the state of charging.
+There are internal ADC sensors for the amount of potential in the battery to determine the state of charging.
 
 **c. How is the device powered? Is there any transformation or regulation of the power? How is that done? What voltages are used throughout the system?**
 
-The device is powered by mains (120 V, 60 Hz AC), there is a transformer and rectifier that drops the power to 5 V DC
+The device is powered by mains (120 V, 60 Hz AC), there is a transformer and rectifier that drops the power to 8.5 V DC with a secondary 5V regulator for the MCU and power transistors.
 
 **d. Is information stored in your device? Where? How?**
 
-No information is stored on the device.
+Information is stored in the 16-bit MCU in EEPROM (the charging algorithm)
 
 ![Back of the board](IMG_2804.JPG)
 
