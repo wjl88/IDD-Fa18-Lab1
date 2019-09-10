@@ -55,6 +55,8 @@ Roughly 10 ms delay time. Hooking it up to an oscilloscope or recording it with 
 
 **e. Modify the code to make your LED blink your way. Save your new blink code to your lab 1 repository, with a link on the README.md.**
 
+Random Light Generator, or how I learned to stop worrying and love traffic signals
+[RandomLights_v2.ino](https://github.com/wjl88/IDD-Fa19-Lab1/blob/master/RandomLights_v2.ino)
 
 ### 2. Blink your LED
 
